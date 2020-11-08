@@ -1,0 +1,57 @@
+#include <regex>
+#include "util.h"
+/*
+ * Replace oldchar with newchar in stringin and return the altered string
+*/
+void exchange(std::string& stringin, const char* oldchar, const char* newchar) {
+	std::string sTemp;
+	std::regex reg(oldchar);
+
+	std::string sNewChar(newchar);
+	sTemp = std::regex_replace(stringin, reg, sNewChar);
+	stringin = sTemp;
+}
+
+void SlashEnd(std::string &stringin) {
+	if (!stringin.size()) {
+		stringin += '/';
+	}
+	else {
+		if (stringin[stringin.size() - 1] != '/') {
+			stringin += '/';
+		}
+	}
+}
+
+std::vector<std::string> split(std::string strin, char delim = '\04')	{
+	std::string::size_type notfound = std::string::npos;
+	std::vector<std::string> vsParts;
+	std::string::size_type nextPos = 0,furtherPos;
+	
+
+	while(nextPos != notfound)	{
+		furtherPos = strin.find(delim,nextPos);
+		std::string sNext;
+		sNext = strin.substr(nextPos,furtherPos == notfound?furtherPos:furtherPos - nextPos);
+		if(sNext.size())	{
+			vsParts.push_back(sNext);
+		}	
+		nextPos = furtherPos;
+		if(nextPos != notfound && nextPos + 1 < strin.size())	{
+			++nextPos;
+		}
+	}
+	return vsParts;
+}
+#ifdef mainprog
+#include <iostream>
+#include <cstdlib>
+	int main() {
+		std::string sHome = getenv("HOMEPATH");
+		std::cout << "Homepath is " << sHome << '\n';
+		exchange(sHome, "\\\\", "/");
+		std::cout << "sHome is " << sHome << '\n';
+	}
+
+#endif
+

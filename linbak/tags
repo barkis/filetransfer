@@ -1,0 +1,103 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AcceptError	utcpsock.cpp	/^void tcpsock::AcceptError()	{$/;"	f	class:tcpsock
+AddToVectors	addtovectors.cpp	/^void Sync::AddToVectors(char *szFileDetails)	{$/;"	f	class:Sync
+Array	util.h	/^		explicit Array(int size):m_Size(size),pBuff(new T[size]{}){}$/;"	f	class:util::Array
+Array	util.h	/^	class Array {$/;"	c	namespace:util
+BUFFER_H	buffer.h	2;"	d
+Buffer	buffer.cpp	/^Buffer::Buffer(tcpsock *pTheSock):m_pSocket(pTheSock),m_DataLength(0),m_Current(0){$/;"	f	class:Buffer
+Buffer	buffer.h	/^class Buffer	{$/;"	c
+CloseReadSocket	utcpsock.cpp	/^void tcpsock::CloseReadSocket()	{$/;"	f	class:tcpsock
+CloseSocks	sync.cpp	/^ void Sync::CloseSocks()	{$/;"	f	class:Sync
+DirExistsOrMake	DirExistsOrMake.cpp	/^DIR * Sync::DirExistsOrMake(std::string DirName)	{$/;"	f	class:Sync
+DoUpdates	doupdates.cpp	/^void Sync::DoUpdates(char *szNext,unsigned int iDSeq)	{$/;"	f	class:Sync
+EndFileUpdate	endfileupdate.cpp	/^void Sync::EndFileUpdate()	{$/;"	f	class:Sync
+GetConnection	utcpsock.cpp	/^void tcpsock::GetConnection()	{$/;"	f	class:tcpsock
+GetDiff	GetDiff.cpp	/^vector<string> Sync::GetDiff()	{$/;"	f	class:Sync
+GetFiles	GetFiles.cpp	/^DIR* Sync::GetFiles(std::string sDirPath)	{$/;"	f	class:Sync
+GetNextChars	buffer.cpp	/^int Buffer::GetNextChars(char *pTo,int len,bool zTerminate\/*=true*\/,Sync *pSync\/*=nullptr*\/)	{$/;"	f	class:Buffer
+Initialise	initialise.cpp	/^void Sync::Initialise(std::string sInitBlock)	{$/;"	f	class:Sync
+LINROOT	sync.h	/^	static const char *LINROOT;$/;"	m	class:Sync
+Log	log.cpp	/^void Sync::Log(std::string sMess)	{$/;"	f	class:Sync
+MAXBUFF	buffer.h	/^	static const int MAXBUFF = 1000;$/;"	m	class:Buffer
+MainLoop	mainloop.cpp	/^void Sync::MainLoop()	{$/;"	f	class:Sync
+MakeSockConnection	sync.cpp	/^void Sync::MakeSockConnection()	{$/;"	f	class:Sync
+PORT	sync.h	/^	static const int PORT = 23001;$/;"	m	class:Sync
+PathMake	pathmake.cpp	/^DIR* Sync::PathMake(std::string DirName)	{$/;"	f	class:Sync
+ReadConfig	readconfig.cpp	/^void Sync::ReadConfig(std::string sFileName) {$/;"	f	class:Sync
+ReadDir	ReadDir.cpp	/^void Sync::ReadDir(char *szNext)	{$/;"	f	class:Sync
+ReadFailed	sync.h	/^	ReadFailed(std::string sMess,int errorCode):m_sText(sMess),m_Code(errorCode){}$/;"	f	class:ReadFailed
+ReadFailed	sync.h	/^class ReadFailed: public std::exception$/;"	c
+Receive	utcpsock.cpp	/^int tcpsock::Receive(char* buff,int recvlength)	{$/;"	f	class:tcpsock
+RequestUpdates	requestupdates.cpp	/^void Sync::RequestUpdates(std::vector<std::string> &vFileNames, unsigned int iDSeq)	{$/;"	f	class:Sync
+Send	utcpsock.cpp	/^int tcpsock::Send(const std::string sMess, const int size,char cType,unsigned char cSeqL\/*='\\0'*\/,unsigned char cSeqR\/*='\\0'*\/)	{$/;"	f	class:tcpsock
+Sequence	sequence.cpp	/^unsigned int Sync::Sequence(unsigned char *aiSeq)	{	$/;"	f	class:Sync
+SlashEnd	util.cpp	/^void util::SlashEnd(std::string &stringin,bool set \/*=true*\/) {$/;"	f	class:util
+SlashStart	util.cpp	/^void util::SlashStart(std::string &stringin, bool set \/*=true*\/) {$/;"	f	class:util
+StartFileUpdate	startfileupdate.cpp	/^void Sync::StartFileUpdate(char *szFName, unsigned int iDSeq)	{$/;"	f	class:Sync
+Sync	sync.cpp	/^Sync::Sync():m_FileNotOpened(false)	{$/;"	f	class:Sync
+Sync	sync.h	/^class Sync	{$/;"	c
+WINROOT	sync.h	/^	static const char *WINROOT;$/;"	m	class:Sync
+copy	util.h	/^		void copy(T* start, T* end, int startPos) {$/;"	f	class:util::Array
+data	util.h	/^		T* data() { return pBuff; };$/;"	f	class:util::Array
+dump	buffer.h	/^	const char * dump(){return m_Data;}$/;"	f	class:Buffer
+exchange	util.cpp	/^void util::exchange(std::string& stringin, const char* oldchar, const char* newchar) {$/;"	f	class:util
+m_COUNTWIDTH	sync.h	/^	static const short m_COUNTWIDTH = 4;$/;"	m	class:Sync
+m_Code	sync.h	/^	int m_Code;$/;"	m	class:ReadFailed
+m_ConfigPort	sync.h	/^	int m_ConfigPort; $/;"	m	class:Sync
+m_CountWidth	sync.h	/^	short m_CountWidth; $/;"	m	class:Sync
+m_Current	buffer.h	/^	unsigned int m_Current;$/;"	m	class:Buffer
+m_Data	buffer.h	/^	char m_Data[MAXBUFF];$/;"	m	class:Buffer
+m_DataLength	buffer.h	/^	int m_DataLength;$/;"	m	class:Buffer
+m_EndReceived	sync.h	/^	bool m_EndReceived;$/;"	m	class:Sync
+m_FileNotOpened	sync.h	/^	bool m_FileNotOpened;	\/\/failed to open file, discard updates$/;"	m	class:Sync
+m_InputBlockSize	sync.h	/^	static const int m_InputBlockSize = 1000;$/;"	m	class:Sync
+m_LogFile	sync.h	/^	std::ofstream m_LogFile;$/;"	m	class:Sync
+m_NextLen	sync.h	/^	int m_NextLen;$/;"	m	class:Sync
+m_RequestsOutstanding	sync.h	/^	int m_RequestsOutstanding;$/;"	m	class:Sync
+m_Sequence	sync.h	/^	unsigned int m_Sequence;$/;"	m	class:Sync
+m_Size	util.h	/^		int m_Size;$/;"	m	class:util::Array
+m_Sockfd	utcpsock.h	/^	int m_Sockfd;$/;"	m	class:tcpsock
+m_TempFileStream	sync.h	/^	std::ofstream m_TempFileStream;$/;"	m	class:Sync
+m_cType	sync.h	/^	char m_cType;$/;"	m	class:Sync
+m_countWidth	utcpsock.h	/^	short m_countWidth;$/;"	m	class:tcpsock
+m_mapSeqDir	sync.h	/^	std::map<unsigned int,std::string> m_mapSeqDir;$/;"	m	class:Sync
+m_pBuff	sync.h	/^	Buffer *m_pBuff;$/;"	m	class:Sync
+m_pSocket	buffer.h	/^	tcpsock *m_pSocket;$/;"	m	class:Buffer
+m_pSocket	sync.h	/^	tcpsock *m_pSocket;$/;"	m	class:Sync
+m_readSockfd	utcpsock.h	/^	int m_readSockfd;$/;"	m	class:tcpsock
+m_sClientMachine	sync.h	/^	std::string m_sClientMachine;$/;"	m	class:Sync
+m_sConfigPath	sync.h	/^	std::string m_sConfigPath; $/;"	m	class:Sync
+m_sCurrentDirForUpdate	sync.h	/^	std::string m_sCurrentDirForUpdate;$/;"	m	class:Sync
+m_sCurrentFileForUpdate	sync.h	/^	std::string m_sCurrentFileForUpdate;$/;"	m	class:Sync
+m_sPathRoot	sync.h	/^	std::string m_sPathRoot;$/;"	m	class:Sync
+m_sServerName	utcpsock.h	/^	std::string m_sServerName;$/;"	m	class:tcpsock
+m_sText	sync.h	/^	std::string m_sText;$/;"	m	class:ReadFailed
+m_szCount	sync.h	/^	char m_szCount[m_COUNTWIDTH + 1];$/;"	m	class:Sync
+m_szNext	sync.h	/^	char m_szNext[Buffer::MAXBUFF - m_COUNTWIDTH - 1];$/;"	m	class:Sync
+m_szTempFileName	sync.h	/^	char m_szTempFileName[101];$/;"	m	class:Sync
+m_vLinDates	sync.h	/^	std::vector<std::string> m_vLinDates;$/;"	m	class:Sync
+m_vLinFiles	sync.h	/^	std::vector<std::string>  m_vLinFiles; $/;"	m	class:Sync
+m_vWinDates	sync.h	/^	std::vector<std::string>m_vWinDates;$/;"	m	class:Sync
+m_vWinFiles	sync.h	/^	std::vector<std::string>  m_vWinFiles; $/;"	m	class:Sync
+main	main.cpp	/^int main()	{$/;"	f
+main	opentest.cpp	/^int main()	{$/;"	f
+main	test.cpp	/^int main()	{$/;"	f
+main	util.cpp	/^int main() {$/;"	f
+narrow_cast	util.cpp	/^Target util::narrow_cast(Source v) {$/;"	f	class:util
+operator []	util.h	/^		T& operator[](int index) { return pBuff[index]; }$/;"	f	class:util::Array
+pBuff	util.h	/^		T *pBuff;$/;"	m	class:util::Array
+read	SyncRead.cpp	/^void Sync::read()	{$/;"	f	class:Sync
+read	buffer.cpp	/^int Buffer::read(char *pos,int len,Sync *pSync\/*=nullptr*\/)	{$/;"	f	class:Buffer
+split	util.cpp	/^std::vector<std::string> util::split(std::string strin, char delim\/* = '\\04'*\/) {$/;"	f	class:util
+tcpsock	utcpsock.cpp	/^tcpsock::tcpsock(int portno):m_Sockfd(0),m_readSockfd(0)	{$/;"	f	class:tcpsock
+tcpsock	utcpsock.h	/^class tcpsock	{$/;"	c
+util	util.h	/^namespace util {$/;"	n
+what	readfailed.cpp	/^const char* ReadFailed::what()	{$/;"	f	class:ReadFailed
+~Array	util.h	/^		~Array() { delete[] pBuff; }$/;"	f	class:util::Array
+~Sync	sync.cpp	/^Sync::~Sync()	{$/;"	f	class:Sync
+~tcpsock	utcpsock.cpp	/^tcpsock::~tcpsock()	{$/;"	f	class:tcpsock

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <client>
+    <winroot>/Documents</winroot>
+  </client>
+  <server>
+    <linroot>/bak</linroot>
+  </server>
+  <system>
+    <port>23001</port>
+    <countwidth>4</countwidth>
+  </system>
+
+</config>

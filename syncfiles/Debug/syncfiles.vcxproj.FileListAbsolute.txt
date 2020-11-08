@@ -1,0 +1,2 @@
+C:\projects\cpp\syncfiles\syncfiles\Debug\syncfiles.exe
+C:\projects\cpp\syncfiles\syncfiles\Debug\syncfiles.pdb
